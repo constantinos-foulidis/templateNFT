@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CardDialogComponent } from './card-dialog/card-dialog.component';
+import {MatButtonModule} from '@angular/material/button';
+import { ShowMessageComponent } from './show-message/show-message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardDialogComponent
+    CardDialogComponent,
+    ShowMessageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

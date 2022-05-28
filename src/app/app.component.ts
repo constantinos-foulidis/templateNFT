@@ -1,3 +1,4 @@
+import { NoopScrollStrategy } from '@angular/cdk/overlay';
 import { Component, Inject } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { CardDialogComponent } from './card-dialog/card-dialog.component';
@@ -13,12 +14,13 @@ export class AppComponent {
   constructor(public dialog: MatDialog) {}
   openDialog() {
     console.log('inside');
-    this.dialog.open(CardDialogComponent, {
+    this.dialog.open(CardDialogComponent,{
       data: { card:{
         color: 'Blue'
 
              }
       },
+      scrollStrategy: new NoopScrollStrategy()
     });
   }
 }

@@ -605,7 +605,10 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+}
+.line-height-normal{
+  line-height: normal !important;
 }
 
 .img-thumbnail {
@@ -11549,11 +11552,19 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-
+.pointer:hover{
+  cursor: pointer;
+}
+.btonshow{
+  color: white !important;
+  background-color: black !important;
+  // border-radius: 35% !important;
+}
 .timeline {
   position: relative;
   padding: 0;
   list-style: none;
+  margin-top: 0 !important;
 }
 .timeline:before {
   position: absolute;
