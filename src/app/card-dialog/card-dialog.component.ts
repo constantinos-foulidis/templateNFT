@@ -8,7 +8,7 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 })
 export class CardDialogComponent implements OnInit {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
 
   ngOnInit(): void {
     console.log(this.data);
@@ -17,10 +17,6 @@ export class CardDialogComponent implements OnInit {
 }
 export interface DialogData {
   card: {
-     color: string;
      src:string;
-     description:string;
-     type:string;
-     price:string;
   }
 }

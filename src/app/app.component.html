@@ -29,10 +29,11 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Collection</h2>
-                    <h3 class="section-subheading text-muted">Becouse I Can NFT cards is only 9 cards collection with different status based on a color system.</h3>
+                    <h3 class="section-subheading text-muted">Becouse I Can NFT is only 9 cards collection with different status based on a color system.</h3>
                     <h3 class="section-subheading text-muted">And its contain a hint message</h3>
-                    <button class="btonshow mb-5" mat-raised-button >Show me</button>
+                    <button class="btonshow mb-5" mat-raised-button (click)="openMessage()">Show me</button>
                     <h3 class="section-subheading text-muted">Becouse you can!</h3>
+                    <h3 class="section-subheading text-muted">Believe in you!</h3>
                     <h3 class="section-subheading text-muted">Every color is more than one letter</h3>
                 </div>
 
@@ -45,7 +46,7 @@
                   <div class="row">
                       <div class="col-lg-4 col-sm-6 mb-4">
                       <!-- Portfolio item 3-->
-                      <div class="portfolio-item" (click)="openDialog()">
+                      <div class="portfolio-item" (click)="openDialog(0)">
                           <a class="portfolio-link">
                               <div class="portfolio-hover">
                                   <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -60,7 +61,7 @@
                   </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                           <!-- Portfolio item 1-->
-                          <div class="portfolio-item" (click)="openDialog()">
+                          <div class="portfolio-item" (click)="openDialog(1)">
                               <a class="portfolio-link">
                                   <div class="portfolio-hover">
                                       <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -75,7 +76,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                           <!-- Portfolio item 2-->
-                          <div class="portfolio-item" (click)="openDialog()">
+                          <div class="portfolio-item" (click)="openDialog(2)">
                               <a class="portfolio-link">
                                   <div class="portfolio-hover">
                                       <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -90,7 +91,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item" (click)="openDialog()">
+                        <div class="portfolio-item" (click)="openDialog(3)">
                             <a class="portfolio-link">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -105,7 +106,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item" (click)="openDialog()">
+                        <div class="portfolio-item" (click)="openDialog(4)">
                             <a class="portfolio-link">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -120,7 +121,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item" (click)="openDialog()">
+                        <div class="portfolio-item" (click)="openDialog(5)">
                             <a class="portfolio-link">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -135,7 +136,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item" (click)="openDialog()">
+                        <div class="portfolio-item" (click)="openDialog(6)">
                             <a class="portfolio-link">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -150,7 +151,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item" (click)="openDialog()">
+                        <div class="portfolio-item" (click)="openDialog(7)">
                             <a class="portfolio-link">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -165,7 +166,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item" (click)="openDialog()">
+                        <div class="portfolio-item" (click)="openDialog(8)">
                             <a class="portfolio-link">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -188,7 +189,7 @@
         <section class="page-section" id="system">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">System</h2>
+                    <h2 class="section-heading text-uppercase">Color System</h2>
                     <h3 class="section-subheading text-muted">The hierarchy of the cards shown bellow:</h3>
                 </div>
                 <ul class="timeline">
@@ -212,7 +213,7 @@
                             <div class="timeline-body"><h4 class="text-muted">C | L | S | Y</h4></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
+                    <li class="timeline">
                       <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/cards/white completed.png" alt="..." /></div>
                       <div class="timeline-panel">
                           <div class="timeline-heading">
@@ -232,7 +233,7 @@
                         <div class="timeline-body"><h4 class="text-muted">B | D | T | W </h4></div>
                     </div>
                   </li>
-                  <li class="timeline-inverted">
+                  <li class="timeline">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/cards/green completed.png" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -252,7 +253,7 @@
                         <div class="timeline-body"><h4 class="text-muted">H | J | K | N | U</h4></div>
                     </div>
                   </li>
-                  <li class="timeline-inverted">
+                  <li class="timeline">
                     <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/cards/purple completed.png" alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -262,7 +263,7 @@
                         <div class="timeline-body"><h4 class="text-muted">P | Q | V</h4></div>
                     </div>
                   </li>
-                    <li class="timeline-inverted pointer">
+                    <li class="timeline-inverted pointer" (click)="openMessage()">
                         <div class="timeline-image">
                             <h4 class="line-height-normal">
                                 Be Part
@@ -272,7 +273,7 @@
                                 Story!
 
                             </h4>
-                            <h3>Click Me !</h3>
+                            <h3 >Click Me !</h3>
                         </div>
                     </li>
                 </ul>
